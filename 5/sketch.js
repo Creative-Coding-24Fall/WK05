@@ -4,14 +4,19 @@ let cc;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(20);
+  
   cc = 0;
 }
 
 function draw() {
-  if (cc > 50) {
-    fill(200, 0, 200);
-  }
+  background(20);
+
+  // if (cc < 50) {
+  //   fill(200, 0, 200);
+  // }else{
+  //   fill(200,20,0);
+  // }
+  
   ellipse(width / 2, height / 2, 5*cc);
 }
 

@@ -2,9 +2,19 @@
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(20);
+ 
 }
 
 function draw() {
-  ellipse(width / 2, height / 2, 20);
+  background(20);
+   
+  // period of our 
+  let p = 2000;
+  let counter = millis() % p;
+  let md = map(counter,0,p,20,300);
+  let mr = map(counter,0,p,100,255);
+
+  fill(mr, 20, 100);
+
+  ellipse(width / 2, height / 2, md);
 }
